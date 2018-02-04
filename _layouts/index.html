@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>{{ site.title }}</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+{{ content }}
+
+<script src="/js/scripts.js"></script>
+
+<script>
+    var posts = [{% for post in site.posts %}
+    {
+        date: {{ post.date | jsonify }},
+        title: {{ post.title | jsonify }},
+        url: {{ post.url | jsonify }},
+    },
+    {% endfor %}]
+
+    drawCalendar(posts)
+</script>
+</body>
+</html>

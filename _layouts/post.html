@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+
+<div class="post">
+    <div id="header" class="post-header"></div>
+
+    <div class="post_content">{{ content }}</div>
+</div>
+
+<script src="/js/scripts.js"></script>
+
+<script>
+    var post = {
+        date: {{ page.date | jsonify }},
+        title: {{ page.title | jsonify }},
+    }
+
+    drawPostHeader(post)
+</script>
+</body>
+</html>

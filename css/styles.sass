@@ -1,0 +1,88 @@
+---
+---
+
+$calendar_width: 85vw
+$post_width: 60vw
+
+*
+  box-sizing: border-box
+
+body
+  margin: 100px 0
+  padding: 0
+
+.title_large
+  display: block
+  font-family: sans-serif
+  font-size: 48pt
+
+.title_small
+  font-size: 24pt
+  font-weight: 300
+  font-style: italic
+
+.calendar
+  display: flex
+  flex-wrap: wrap
+  width: $calendar_width
+  margin: auto
+
+.calendar-cell
+  color: inherit
+  text-decoration: inherit
+  width: ($calendar_width / 7)
+  height: ($calendar_width / 7)
+  padding: 1vw 1vw
+
+.calendar-cell:hover
+  background-color: #eee
+  border-radius: 8px
+
+.calendar-cell_title
+  width: ($calendar_width * 6 / 7)
+  margin-top: -3vw
+
+.calendar-cell_title:hover
+  background-color: inherit
+
+.number
+  font-family: sans-serif
+  font-size: 32pt
+  height: 5vw
+
+.number_weekend
+  opacity: 0.5
+
+.advice
+  font-style: italic
+
+.post
+  font-family: sans-serif
+  font-size: 16pt
+  width: $post_width
+  margin: auto
+
+.post-header
+  background: #333
+  color: #fff
+  border-radius: 8px
+  height: 150px
+  margin-bottom: 50px
+  padding: 25px 50px
+
+.post-date
+  font-size: 12pt
+
+.post-weekday
+  font-family: serif
+  font-size: 12pt
+  font-style: italic
+  opacity: 0.5
+
+.post-title
+  font-size: 24pt
+  margin: 10px 0
+
+p
+  font-size: 14pt
+  line-height: 21pt
