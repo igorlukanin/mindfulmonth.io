@@ -27,7 +27,7 @@ function drawCalendar(posts) {
         .forEach(function(post) {
             var cell = cal.append("a")
                 .classed("calendar-cell", true)
-                .attr("href", post.url)
+                .attr("href", "." + post.url)
 
             var day = saturday.add(1, "day")
             var isWeekend = day.isoWeekday() === 6 || day.isoWeekday() === 7
