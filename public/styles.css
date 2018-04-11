@@ -1,0 +1,88 @@
+/*box-sizing: border-box*/
+
+body {
+    background: #ebebeb url("background.jpg") no-repeat bottom right;
+    color: #111;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 50px 80px;
+    padding: 0;
+}
+
+@media (max-width: 1250px) {
+    body {
+        background-position-x: 600px;
+    }
+}
+
+.title {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.subtitle {
+    display: block;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 100px;
+}
+
+input {
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 20px 0 0;
+    padding: 10px 15px 8px;
+}
+
+input[type="email"] {
+    width: 250px;
+}
+
+input[type="submit"] {
+    background-color: inherit;
+    border: solid 1px #999;
+    cursor: pointer;
+    padding: 10px 20px 8px;
+}
+
+input[type="submit"]:active {
+    color: inherit;
+}
+
+.authors {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    width: 60px;
+}
+
+.authors li {
+    margin-right: 40px;
+}
+
+.authors img {
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.column {
+    max-width: 500px;
+}
