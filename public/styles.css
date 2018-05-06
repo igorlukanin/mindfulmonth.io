@@ -1,51 +1,52 @@
-/*box-sizing: border-box*/
 
 body {
-    background: #ebebeb url("background.jpg") no-repeat bottom right;
+    background-image: url('back.jpg') ;
+	background-position: bottom right;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	background-color: #ebebeb;
+
     color: #111;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
     margin: 50px 80px;
     padding: 0;
-}
-
-@media (max-width: 1250px) {
-    body {
-        background-position-x: 600px;
-    }
 }
 
 .title {
     font-size: 40px;
     line-height: 40px;
+    font-weight: 500;
 }
 
 .subtitle {
     display: block;
-    font-family: serif;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
+    line-height: 30px;
 }
 
 .form {
     display: flex;
     flex-direction: row;
-    margin: 30px 0 100px;
+    margin: 30px 0 80px;
 }
 
 input {
     border: none;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
     margin: 0 20px 0 0;
     padding: 10px 15px 8px;
 }
 
 input[type="email"] {
-    width: 250px;
+    width: 300px;
 }
 
 input[type="submit"] {
@@ -83,6 +84,21 @@ input[type="submit"]:active {
     width: 60px;
 }
 
+.authors a {
+	color: #111;
+	text-decoration: none;
+}
+
+.authors a:hover {
+	text-decoration: underline;
+}
+
 .column {
-    max-width: 500px;
+    max-width: 700px;
+}
+
+.screen {
+	width: 600px;
+	box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
+	margin-bottom: 80px;
 }
