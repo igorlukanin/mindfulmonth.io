@@ -1,51 +1,59 @@
-/*box-sizing: border-box*/
 
 body {
-    background: #ebebeb url("background.jpg") no-repeat bottom right;
+    background-image: url('back.jpg');
+  	background-position: bottom right;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-color: #ebebeb;
+
     color: #111;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 50px 80px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 100px 160px;
     padding: 0;
 }
 
-@media (max-width: 1250px) {
-    body {
-        background-position-x: 600px;
-    }
+h3 {
+	font-size: 20px;
+    line-height: 32px;
+    margin: 10px 0;
+    font-weight: 500;
 }
 
 .title {
     font-size: 40px;
     line-height: 40px;
+    font-weight: 500;
 }
 
 .subtitle {
     display: block;
-    font-family: serif;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
+    line-height: 40px;
 }
 
 .form {
     display: flex;
     flex-direction: row;
-    margin: 30px 0 100px;
+    margin: 30px 0 80px;
 }
 
 input {
     border: none;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
     margin: 0 20px 0 0;
     padding: 10px 15px 8px;
 }
 
 input[type="email"] {
-    width: 250px;
+    width: 300px;
 }
 
 input[type="submit"] {
@@ -66,7 +74,7 @@ input[type="submit"]:active {
     line-height: 14px;
     text-align: center;
     list-style: none;
-    margin: 20px 0;
+    margin: 20px 0 180px;
     padding: 0;
     width: 60px;
 }
@@ -83,6 +91,27 @@ input[type="submit"]:active {
     width: 60px;
 }
 
+a {
+	color: #111;	
+}
+
+.authors a {
+	text-decoration: none;
+}
+
+.authors a:hover {
+	text-decoration: underline;
+}
+
 .column {
-    max-width: 500px;
+    max-width: 700px;
+    margin: 10px 0 30px;
+}
+
+.screen {
+	box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
+	margin: 30px 0 50px;
+	width: 80%;
+	max-width: 648px;
+    height: auto;
 }
