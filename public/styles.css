@@ -1,17 +1,17 @@
 @font-face {
 	font-family: Rubik;
-	src: url('public/Rubik-Regular.ttf');
+	src: url(Rubik-Regular.ttf);
 }
 
 @font-face {
 	font-family: Rubik;
-	src: url('public/Rubik-Medium.ttf');;
+	src: url('Rubik-Medium.ttf');
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: Playfair-Display;
-	src: url('public/PlayfairDisplay-Italic.ttf');;
+	src: url('PlayfairDisplay-Italic.ttf');
 }
 
 body {
@@ -45,7 +45,7 @@ h3 {
 
 .subtitle {
     display: block;
-    font-family: Playfair-Display, serif;
+    font-family: 'Playfair-Display', serif;
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
