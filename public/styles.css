@@ -59,6 +59,23 @@ h3 {
     margin: 30px 0 80px;
 }
 
+.form_hidden {
+    display: none;
+}
+
+.done-message {
+    display: none;
+    background-color: #fff;
+	box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
+    margin: 0 0 60px -20px;
+    padding: 20px 20px 30px;
+	max-width: 348px !important;
+}
+
+.done-message_visible {
+    display: block !important;
+}
+
 input {
     border: none;
     font-family: 'Rubik', sans-serif;
