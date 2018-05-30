@@ -18,7 +18,7 @@ body {
     background-image: url('back.jpg');
   	background-position: center;
   	background-repeat: no-repeat;
-	background-attachment: fixed;
+		background-attachment: fixed;
   	background-size: cover;
   	background-color: #ebebeb;
 
@@ -66,6 +66,7 @@ h3 {
     display: none;
     margin: 0 0 60px -20px;
     padding: 20px 20px 30px;
+		max-width: 700px;
 }
 
 .done-message_visible {
@@ -142,5 +143,5 @@ a {
 	margin: 30px 0 50px;
 	width: 80%;
 	max-width: 648px;
-    height: auto;
+  height: auto;
 }
