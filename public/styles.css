@@ -73,6 +73,17 @@ h3 {
     display: block !important;
 }
 
+.confirm-message {
+    display: none;
+    margin: 0 0 60px -20px;
+    padding: 20px 20px 30px;
+		max-width: 700px;
+}
+
+.confirm-message_visible {
+    display: block !important;
+}
+
 input {
     border: none;
     font-family: 'Rubik', sans-serif;

@@ -31,6 +31,10 @@
 </form>
 
 <div class='done-message'>
+    Спасибо, что подписались. Первое письмо уже в&nbsp;почте.
+</div>
+
+<div class='confirm-message'>
     Подтвердите подписку: перейдите по&nbsp;ссылке из&nbsp;письма, которое мы&nbsp;только что отправили. Если письма нет, проверьте папку &laquo;Спам&raquo;.
 </div>
 
@@ -106,6 +110,19 @@ if (window.location.hash !== undefined) {
             .from(window.document.getElementsByClassName('done-message'))
             .forEach(function(message) {
                 message.classList.add('done-message_visible')
+            })
+
+    if (hash === 'confirm') {
+        Array
+            .from(window.document.getElementsByClassName('form'))
+            .forEach(function(form) {
+                form.classList.add('form_hidden')
+            })
+
+        Array
+            .from(window.document.getElementsByClassName('confirm-message'))
+            .forEach(function(message) {
+                message.classList.add('confirm-message_visible')
             })
     }
 }
